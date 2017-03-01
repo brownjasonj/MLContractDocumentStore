@@ -2,7 +2,7 @@ xquery version "1.0-ml";
 import module namespace admin = "http://marklogic.com/xdmp/admin" 
     at "/MarkLogic/admin.xqy";
 let $config := admin:get-configuration()
-let $dbid := xdmp:database("Documents")
+let $dbid := xdmp:database("RiskStore")
 let $validStart := admin:database-range-element-index("dateTime",
 "", "validStart", "", fn:false() )
 let $validEnd := admin:database-range-element-index("dateTime",
